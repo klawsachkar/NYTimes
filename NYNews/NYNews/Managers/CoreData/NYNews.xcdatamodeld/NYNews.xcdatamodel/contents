@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G5019" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Event" representedClassName="Event" codeGenerationType="class">
+        <attribute name="timestamp" optional="YES" attributeType="Date">
+            <userInfo/>
+        </attribute>
+        <userInfo/>
+    </entity>
+    <entity name="NYMediaMetadata" representedClassName="NYMediaMetadata" syncable="YES" codeGenerationType="class">
+        <attribute name="format" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="newsMedia" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NYNewsMedia" inverseName="mediaMetadataList" inverseEntity="NYNewsMedia" syncable="YES"/>
+    </entity>
+    <entity name="NYNewsDetail" representedClassName="NYNewsDetail" syncable="YES" codeGenerationType="class">
+        <attribute name="byline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keywords" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publishedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="views" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="newsMediaList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NYNewsMedia" inverseName="newsDetail" inverseEntity="NYNewsMedia" syncable="YES"/>
+    </entity>
+    <entity name="NYNewsMedia" representedClassName="NYNewsMedia" syncable="YES" codeGenerationType="class">
+        <attribute name="approved" optional="YES" attributeType="Integer 32" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="caption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="copyright" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="mediaMetadataList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NYMediaMetadata" inverseName="newsMedia" inverseEntity="NYMediaMetadata" syncable="YES"/>
+        <relationship name="newsDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NYNewsDetail" inverseName="newsMediaList" inverseEntity="NYNewsDetail" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Event" positionX="20.9140625" positionY="91.41796875" width="128" height="60"/>
+        <element name="NYMediaMetadata" positionX="-254.80859375" positionY="293.42578125" width="128" height="120"/>
+        <element name="NYNewsDetail" positionX="228.38671875" positionY="172.5703125" width="128" height="225"/>
+        <element name="NYNewsMedia" positionX="-3.41015625" positionY="282.98828125" width="128" height="150"/>
+    </elements>
+</model>

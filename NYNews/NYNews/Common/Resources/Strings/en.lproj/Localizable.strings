@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  NYNews
+
+  Created by Klaws Achkar on 12/7/20.
+  Copyright © 2020 Klaws Achkar. All rights reserved.
+*/
+
+"alert.title.error" = "Error";
+"alert.message.error.generic" = "An unknow error occured, Please try again later!";
+"alert.message.error.noData" = "No news to display, Please try again later!";
+"alert.action.ok" = "OK";
+
+"nyNews.pageTitle" = "NY News";
+"nyNews.refreshMessage" = "Refreshing News...";
+"nyNews.actionSheet.title.newsPeriod" = "News Period";
+"nyNews.actionSheet.action.oneDay" = "1 Day";
+"nyNews.actionSheet.action.oneWeek" = "1 Week";
+"nyNews.actionSheet.action.oneMonth" = "1 Month";
+
+"newsDetail.pageTitle" = "News Detail";
+"newsDetail.nbViews" = "%i Views";

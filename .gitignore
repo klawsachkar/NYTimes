@@ -1,0 +1,5 @@
+NYNews/*xcodeproj/xcuserdata/*
+NYNews/*xcodeproj/xcshareddata/*
+NYNews/*xcworkspace/xcuserdata/*
+NYNews/Pods/
+NYNews/Podfile.lock

@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  NYNews
+
+  Created by Klaws Achkar on 12/7/20.
+  Copyright © 2020 Klaws Achkar. All rights reserved.
+*/
+
+"alert.title.error" = "خطأ";
+"alert.message.error.generic" = "حدث خطأ غير معروف ، يرجى المحاولة مرة أخرى لاحقًا!";
+"alert.message.error.noData" = "لا توجد أخبار لعرضها ، يرجى المحاولة مرة أخرى لاحقًا!";
+"alert.action.ok" = "تم";
+
+"nyNews.pageTitle" = "أخبار نيويورك";
+"nyNews.refreshMessage" = "تحديث الأخبار ...";
+"nyNews.actionSheet.title.newsPeriod" = "فترة الأخبار";
+"nyNews.actionSheet.action.oneDay" = "يوم";
+"nyNews.actionSheet.action.oneWeek" = "أسبوع";
+"nyNews.actionSheet.action.oneMonth" = "شهر";
+
+"newsDetail.pageTitle" = "تفاصيل الأخبار";
+"newsDetail.nbViews" = "%i عدد المشاهدات";
