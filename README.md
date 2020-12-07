@@ -25,6 +25,7 @@ ObjectMapper: used to map JSON objects into Swift Objects
 Alamofire: used to perform api calls
 AlamofireObjectMapper: used to map JSON objects into Swift Objects inside Alamofire
 SugarRecord/CoreData: used to save, read data into the Database
+SwiftGen: used to generate Localizable and Images dynamic classes
 ```
 
 ### Installing
